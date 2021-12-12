@@ -1,9 +1,9 @@
 package testFolder;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class TestcodeTest {
 
@@ -18,5 +18,4 @@ public class TestcodeTest {
     void fail_Test() {
         assertThat(true).isEqualTo(false);
     }
-
 }
