@@ -18,5 +18,4 @@ public class TestcodeTest {
     void suc_Test2() {
         assertThat(true).isEqualTo(true);
     }
-
 }
