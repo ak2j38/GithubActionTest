@@ -17,7 +17,7 @@ jobs:
           java-version: 11
 
       - name: Start Logging
-        run: echo 
+        run: echo
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
