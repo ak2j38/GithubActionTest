@@ -1,4 +1,3 @@
 package testFolder;
 
-public class testcodeTest2 {
-}
+public class testcodeTest2 {}
