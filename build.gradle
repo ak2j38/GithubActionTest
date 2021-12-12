@@ -6,8 +6,7 @@ plugins {
 
 group = 'com.woojoolion'
 version = '0.0.1-SNAPSHOT'
-sourceCompati
-#bility = 11
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
