@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testFolder.TestcodeTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2021-12-12T10:35:58" hostname="PARK" time="0.071">
+<testsuite name="testFolder.TestcodeTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2021-12-12T10:45:23" hostname="PARK" time="0.072">
   <properties/>
   <testcase name="깃헙 액션을 위한 성공 테스트" classname="testFolder.TestcodeTest" time="0.06"/>
-  <testcase name="깃헙 액션을 위한 실패 테스트" classname="testFolder.TestcodeTest" time="0.009">
+  <testcase name="깃헙 액션을 위한 실패 테스트" classname="testFolder.TestcodeTest" time="0.01">
     <failure message="org.opentest4j.AssertionFailedError: &#13;&#10;expected: false&#13;&#10;but was : true" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
 expected: false
 but was : true
@@ -102,7 +102,7 @@ but was : true
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="깃헙 액션을 위한 성공 테스트2" classname="testFolder.TestcodeTest" time="0.001"/>
+  <testcase name="깃헙 액션을 위한 성공 테스트2" classname="testFolder.TestcodeTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
