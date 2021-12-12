@@ -19,9 +19,4 @@ public class TestcodeTest {
         assertThat(true).isEqualTo(true);
     }
 
-    @Test
-    @DisplayName("깃헙 액션을 위한 실패 테스트")
-    void fail_Test() {
-        assertThat(true).isEqualTo(false);
-    }
 }
