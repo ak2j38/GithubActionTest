@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.5.6'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+group = 'com.woojoolion'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.projectlombok:lombok'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'com.google.code.findbugs:jsr305:3.0.2' // unknown enum constant When.MAYBE 해결
+    if (System.getProperty("os.arch").equals("aarch64")) { // MockWebServer의 맥 M1 특정 DNS리졸버 버그해결
+        implementation 'io.netty:netty-resolver-dns-native-macos:4.1.68.Final:osx-aarch_64'
+    }
+    annotationProcessor 'org.projectlombok:lombok'
+
+    testImplementation 'com.squareup.okhttp3:mockwebserver'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
